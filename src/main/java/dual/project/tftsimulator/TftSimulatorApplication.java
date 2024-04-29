@@ -8,6 +8,7 @@ public class TftSimulatorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TftSimulatorApplication.class, args);
+		System.out.println("hello world");
 	}
 
 }
