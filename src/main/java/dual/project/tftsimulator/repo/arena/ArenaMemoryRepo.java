@@ -1,4 +1,4 @@
-package dual.project.tftsimulator.repo;
+package dual.project.tftsimulator.repo.arena;
 
 import dual.project.tftsimulator.model.Point;
 import dual.project.tftsimulator.model.Unit;
@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @Repository
 public class ArenaMemoryRepo implements ArenaRepo{
@@ -20,13 +19,13 @@ public class ArenaMemoryRepo implements ArenaRepo{
     }
 
     @Override
-    public Optional<Unit> findById(Long id) {
-        return Optional.empty();
+    public Unit findById(Long id) {
+        return null;
     }
 
     @Override
-    public Optional<Unit> findByName(String name) {
-        return Optional.empty();
+    public Unit findByName(String name) {
+        return null;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package dual.project.tftsimulator.repo;
+package dual.project.tftsimulator.repo.arena;
 
 import dual.project.tftsimulator.model.Unit;
 
@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface ArenaRepo {
     Unit save(Unit unit);
-    Optional<Unit> findById(Long id);
-    Optional<Unit> findByName(String name);
+    Unit findById(Long id);
+    Unit findByName(String name);
     List<Unit> findAll();
 }
