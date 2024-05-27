@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class ArenaService {
 
-    private ArenaRepo arenaRepo;
+    private ArenaRepo arenaRepo; // 배치판에 챔피언을 넣고 뺀다.
 
     @Autowired
     public ArenaService(ArenaRepo arenaRepo) {

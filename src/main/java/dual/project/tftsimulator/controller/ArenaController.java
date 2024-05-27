@@ -20,13 +20,13 @@ public class ArenaController {
         this.arenaService = arenaService;
     }
 
-    @PostMapping
+    @PostMapping //프론트 영역에 있는 배치판 관련된 로직
     public ResponseEntity<Void> putUnit(@RequestBody Unit unit) {
         //Logic
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
-    @DeleteMapping
+    @DeleteMapping //프론트 영역에 있는 배치판 삭제 로직
     public ResponseEntity<Unit> moveUnit(@RequestBody Point position) {
         //Logic
         Unit dummy = new Unit(new Champ("dummy"), position);
